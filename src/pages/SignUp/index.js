@@ -23,7 +23,6 @@ class SignUp extends Component {
     } else {
       try {
         await api.post("/users", { username, email, password });
-        this.setState({ error: "" });
         this.props.history.push("/");
       } catch (err) {
         console.log(err);
