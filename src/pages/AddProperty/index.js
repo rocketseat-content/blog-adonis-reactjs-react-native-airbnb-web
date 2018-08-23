@@ -97,6 +97,7 @@ class AddProperty extends Component {
 
     this.props.history.push("/app");
   };
+
   render() {
     return (
       <Form onSubmit={this.handleSubmit}>
