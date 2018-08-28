@@ -13,6 +13,7 @@ import Properties from "./components/Properties";
 import Button from "./components/Button";
 
 import AddProperty from "../AddProperty";
+import Property from "../Property";
 
 import { Container, ButtonContainer, PointReference } from "./styles";
 
@@ -143,6 +144,11 @@ class Map extends Component {
           path={`${match.url}/properties/add`}
           parentPath={match.url}
           component={AddProperty}
+        />
+        <ModalRoute
+          path={`${match.url}/property/:id`}
+          parentPath={match.url}
+          component={Property}
         />
       </Fragment>
     );
